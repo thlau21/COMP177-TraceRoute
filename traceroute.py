@@ -47,7 +47,7 @@ if __name__ == "__main__":
                 if (targetReached == True and (TTL != maxHops + 1)):
                     print(TTL, ".*")
                 elif(TTL != maxHops+1):
-                    print(answer.src)
+                    print('Reached: ', answer.src)
                     targetReached = True
                 else:
                     break
