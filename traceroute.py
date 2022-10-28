@@ -22,5 +22,4 @@ while hops < 20:
 
 
     ipInRoute.append(hops)
->>>>>>> 782a2c53d206ce2e0511f6ff4acb43e9d6dc430e
     hops += 1
