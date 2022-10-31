@@ -1,3 +1,8 @@
+#Takes in destination ip as input from user as they run the script e.g. python traceroute.py 8.8.8.8
+#validates inputted ip from user 
+#randomly generate destination ports for UDP packet
+#build ip packet with ttl that grows with each loop iteration with the inputted destination ip and encapsulating udp packet with our random destination port
+#within the loop iteration we send each packet we build and outputs our response with filters based on the if statements
 from scapy.all import *
 import ipaddress
 import sys
@@ -51,5 +56,6 @@ if __name__ == "__main__":
                     targetReached = True
                 else:
                     break
+            #got a reply
             else:
                 print(TTL, ". ", answer.src)
